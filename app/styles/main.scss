@@ -1,0 +1,83 @@
+@import "compass/css3/box",
+        "compass/css3/text-shadow",
+        "compass/css3/transition",
+        "normalize";
+
+html, body { height: 100%; }
+
+body {
+  @include display-box;
+  @include box-orient(vertical);
+  @include box-pack(center);
+  background: #a12;
+  color: #ffe;
+  font-family: "Helvetica Neue Condensed Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+h1 {
+  @include transition-property(opacity, text-shadow);
+  text-transform: uppercase;
+
+  -webkit-animation: status_screen_pulse 1.1079s ease-in infinite;
+     -moz-animation: status_screen_pulse 1.1079s ease-in infinite;
+       -o-animation: status_screen_pulse 1.1079s ease-in infinite;
+          animation: status_screen_pulse 1.1079s ease-in infinite;
+}
+
+@-webkit-keyframes status_screen_pulse {
+  0%   {
+    opacity: 1.0;
+    @include text-shadow(0 0 15px #fdc, 0 0 25px #fdc, 0 0 100px #fdc);
+  }
+  50%  {
+    @include text-shadow(0 0 3px #fdc, 0 0 6px #fdc, 0 0 25px #fdc);
+  }
+  100% {
+    opacity: 0.2;
+    @include text-shadow(0 0 0 #fdc, 0 0 0 #fdc, 0 0 0 #fdc);
+  }
+}
+@-moz-keyframes status_screen_pulse {
+  0%   {
+    opacity: 1.0;
+    @include text-shadow(0 0 15px #fdc, 0 0 25px #fdc, 0 0 100px #fdc);
+  }
+  50%  {
+    @include text-shadow(0 0 3px #fdc, 0 0 6px #fdc, 0 0 25px #fdc);
+  }
+  100% {
+    opacity: 0.2;
+    @include text-shadow(0 0 0 #fdc, 0 0 0 #fdc, 0 0 0 #fdc);
+  }
+}
+@-o-keyframes status_screen_pulse {
+  0%   {
+    opacity: 1.0;
+    @include text-shadow(0 0 15px #fdc, 0 0 25px #fdc, 0 0 100px #fdc);
+  }
+  50%  {
+    @include text-shadow(0 0 3px #fdc, 0 0 6px #fdc, 0 0 25px #fdc);
+  }
+  100% {
+    opacity: 0.2;
+    @include text-shadow(0 0 0 #fdc, 0 0 0 #fdc, 0 0 0 #fdc);
+  }
+}
+@keyframes status_screen_pulse {
+  0%   {
+    opacity: 1.0;
+    @include text-shadow(0 0 15px #fdc, 0 0 25px #fdc, 0 0 100px #fdc);
+  }
+  50%  {
+    @include text-shadow(0 0 3px #fdc, 0 0 6px #fdc, 0 0 25px #fdc);
+  }
+  100% {
+    opacity: 0.2;
+    @include text-shadow(0 0 0 #fdc, 0 0 0 #fdc, 0 0 0 #fdc);
+  }
+
+}
