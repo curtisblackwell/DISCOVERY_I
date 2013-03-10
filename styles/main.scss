@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  @include transition-property(opacity, text-shadow);
+  @include transition-property(all);
   text-transform: uppercase;
 
   -webkit-animation: status_screen_pulse 1.1079s ease-in infinite;
