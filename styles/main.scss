@@ -3,6 +3,17 @@
         "compass/css3/transition",
         "normalize";
 
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("BebasNeue-webfont.eot");
+    src: url("BebasNeue-webfont.eot?#iefix") format("embedded-opentype"),
+         url("BebasNeue-webfont.woff") format("woff"),
+         url("BebasNeue-webfont.ttf") format("truetype"),
+         url("BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body { height: 100%; }
 
 body {
@@ -11,8 +22,9 @@ body {
   @include box-pack(center);
   background: #a12;
   color: #ffe;
-  font-family: "Helvetica Neue Condensed Bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 30px;
+  letter-spacing: 1px;
   margin: 0 auto;
   text-align: center;
   width: 80%;
